@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!--
+        what is an object?
+        an object is a collection of related data or functionality 
+        most of the crating an object begins with defining a variable 
+    -->
+    <p>in this example, the <b>person.showDetails()</b> method is called when the button below is clicked </p>
+    <button onclick="person.showDetails()">show details</button>
+    
+    <script>
+        var person ={
+        name: "john doe",
+        age: 30,
+        showDetails: function(){
+           Window(this.name + " is " + this.age + "years old");
+        }
+    };
+    </script>
+</body>
+</html>

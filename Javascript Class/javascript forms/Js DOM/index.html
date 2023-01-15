@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<!--
+    DOM and javascript .
+    With java script, we can do many useful things to the Dom
+    1)javascript can change an html element content 
+    2) javascript can add attribute to an html element 
+    3)javascript can change an element attribute value 
+    4)javascript can change an html element style 
+    5)javascipt can add html element to other html element
+    6)javascript can remove an html element 
+    7)javascript can listen to events that happen to an htmal element  
+-->
+
+<!-- <script>
+alert(document.documentElement.getAttribute("lang"));
+
+alert(document.head.firstElementChild.innerHTML);
+
+document.body.style.backgroundColor = "green";
+</script>
+-->
+
+<!-- select element by name  -->
+
+<p><label>firstName:<input type="text" name="firstName"></label></p>
+<p><label>lastName:<input type="text" name="lastName"></label></p>
+<button onclick="getValue()">submit</button>
+
+
+<script>
+
+function getValue() {
+    var firstName = document.getElementsByName("firstName")[0].value;
+    var lastName = document.getElementsByName("lastName")[0].value;
+    var fullName = "your full name is " + firstName + " " + lastName;
+
+    alert(fullName);
+
+}
+</script>
+</body>
+</html>
+
